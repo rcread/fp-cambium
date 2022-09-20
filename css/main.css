@@ -145,7 +145,7 @@ h2{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(206,220,216,255);
+    background-color: rgb(240, 245, 242);
     border-radius: 6px;
     padding:20px;
     color: rgb(64,101,101);
@@ -210,7 +210,7 @@ h2{
 
 .info-image{
     height: 350px;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -222,6 +222,7 @@ h2{
 .info-image{
     width:100%;
     height:100%;
+    
 }
 }
 
@@ -275,7 +276,6 @@ optgroup{
 
 footer{
     background-color: rgb(168,187,187);
-    border-radius:4px;
     height:100%;
     color: white;
     padding: 20px;
