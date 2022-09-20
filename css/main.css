@@ -1,0 +1,97 @@
+main{
+    font-family: 'Nunito', Arial, sans-serif;
+    background-color:rgb(64,101,101);
+}
+
+.cambium-header{
+    background-color: white;
+}
+
+
+.cambium-header-logo-banner a{
+    color: rgba(199,213,209,255);    
+}
+
+.cambium-logo{
+    height: 80px;
+    padding: 0px 30px;
+}
+
+.cambium-header-info{
+    float: right;
+}
+
+@media (max-width:600px){
+    .cambium-header-info{
+    display: none;
+    }
+}
+
+.menu-control{
+    height: 40px;
+    float:right;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
+
+@media(min-width:600px){
+    .menu-control{
+        display: none;
+    }
+}
+
+.menu-bar{
+    background-color: rgba(199,213,209,255);
+    height: 28px;
+    text-align: center;
+    border-top: 30px;
+}
+
+.menu-bar a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.cambium-header a:hover{
+    color: grey;
+}
+
+@media (max-width:600px){
+    .menu-bar{
+        display: none;
+    }
+}
+
+.cambium-header a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;  
+}
+
+.carousel-item{
+    height:40rem;
+    background: rgb(72, 73, 73);
+    color: white;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding-bottom: 50px;
+}
+
+.overlay-image{
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+}
+
