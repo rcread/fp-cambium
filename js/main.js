@@ -15,21 +15,30 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
 
-
+document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
 
 // hamburger menu functionality
-function openSideMenu(){
-  document.getElementById('menu-display').classList.add('show-menu');
-}
+// function openSideMenu(){
+//   document.getElementById('menu-display').classList.add('show-menu');
+// }
 
-function closeSideMenu(){
-  document.getElementById('menu-display').classList.remove('show-menu');
-}
+// function closeSideMenu(){
+//   document.getElementById('menu-display').classList.remove('show-menu');
+// }
 
-document.getElementById('menu-trigger').addEventListener('click', closeSideMenu);
-document.getElementById('close-menu').addEventListener('click', openSideMenu);
+// document.getElementById('menu-trigger').addEventListener('click', closeSideMenu);
+// document.getElementById('close-menu').addEventListener('click', openSideMenu);
 
 // const menuControl = document.getElementById('menu-control');
 // menuControl.addEventListener('click', function(){

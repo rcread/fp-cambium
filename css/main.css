@@ -2,11 +2,25 @@ main{
     font-family: 'Nunito', Arial, sans-serif;
 }
 
-header, .cambium-header-logo-banner a{
-    color: rgba(199,213,209,255);
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.cambium-header{
+li{
+    list-style:none;
+}
+
+header a{
+    color: rgba(199,213,209,255);
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px; 
+}
+
+header{
     background-color: white;
     position: relative;
     width:100%;
@@ -19,21 +33,92 @@ header, .cambium-header-logo-banner a{
     color:rgba(199,213,209,255);
 }
 
-/* hamburger menu control functionality */
-.menu-control-close,
-.menu-control{
-    height: 35px;
-    position: absolute;
-    right: 25px;
-    top: 25px;
-    cursor: pointer;
+.cambium-header a:hover{
+    color: rgb(175, 175, 175);
 }
 
-/* To hide the hamburger menu when not in tablet or mobile view */
-@media(min-width:935px){
-.menu-control, .pop-up-menu{
-    display: none;
+.navbar{
+    min-height:70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
+
+.nav-menu{
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 60px;
+}
+
+.nav-branding{
+    font-size: 2rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-item a, .menu-bar a:hover{
+    color: rgb(64,101,101);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(64,101,101);
+}
+
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth child(2){
+       opacity: 0; 
+    }
+
+    .hamburger.active .bar:nth child(1){
+        transform: translateY(8px) rotate(45deg); 
+     }
+
+    .hamburger.active .bar:nth child(3){
+        transform: translateY(-8px) rotate(-45deg); 
+    }
+
+    .nav-menu{
+        position: fixed;
+        right:-100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color:rgb(225,231,228);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index:100;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+        color: rgb(64,101,101);
+    }
+
+    .nav-menu.active{
+        right:0;
+    }
 }
 
 .cambium-logo{
@@ -41,28 +126,11 @@ header, .cambium-header-logo-banner a{
     padding: 0px 30px;
 }
 
-.cambium-header-info{
-    float: right;
-    margin: 25px;
-}
-
-@media (max-width:600px){
-.cambium-header-info{
-    display: none;
-}
-}
-
 .menu-bar{
     background-color: rgba(199,213,209,255);
     height: 28px;
     text-align: center;
     border-top: 30px;
-}
-
-@media(max-width:935px){
-.menu-bar{
-    display:none;
-}
 }
 
 .menu-bar a{
@@ -75,16 +143,10 @@ header, .cambium-header-logo-banner a{
     padding: 10px;
 }
 
-.cambium-header a{
-    color: rgba(199,213,209,255);
-    float: right;
-    text-decoration: none;
-    cursor: pointer;
-    padding: 10px; 
+@media(max-width:935px){
+.menu-bar{
+    display:none;
 }
-
-.cambium-header a:hover, .menu-bar a:hover{
-    color: grey;
 }
 
 @media (max-width:600px){
@@ -288,47 +350,4 @@ footer{
 footer{
     flex-direction: column;
 }
-}
-
-.show-menu{
-    opacity: 1;
-    transform: translateX(0%);
-}
-
-.hamburger-menu{
-    display: block;
-    cursor: pointer;
-}
-
-.pop-up-menu ul{
-    list-style: none;
-}
-
-.pop-up-menu ul a{
-    color: rgba(199,213,209,255); 
-}
-
-.pop-up-menu ul a:link{
-    text-decoration: none;
-}
-
-.pop-up-menu ul a:hover{
-    color: grey;
-}
-
-.pop-up-menu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 5;
-}
-
-.pop-up-design{
-    background-color: white;
-    background-size: 1300px 700px;
-    transform: translateX(100%);
-    transition: 0.4s ease-in-out;
-    background-repeat: repeat;
 }
