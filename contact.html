@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>Cambium.com: The Cambium Group</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
 
         <meta charset="utf-8">
@@ -13,15 +13,26 @@
 <main class="cambium-main-container">
 
     <header class="cambium-header">
-        <section class="cambium-header-logo-banner">
+        <nav class="navbar">
             <img class="cambium-logo" src="img/cambium.jpeg" alt="The Cambium Group Logo">
-            <a class="cambium-header-info" href="#">About Us</a>
-            <a class="cambium-header-info" href="#">Contact</a>   
-            <div class="hamburger-menu" id="menu-trigger">
-                <img id="open-menu" class="menu-control" src="img/menu-icon.png" alt="Hamburger Menu" role="navigation">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Our Brands</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            
-        </section>
+
+        </nav>
     </header> 
 
     <section class="contact-section">
@@ -65,8 +76,10 @@
         <div class="jobs">Contact Us</div>
     </footer>
 
-</main>
+    <button onclick="topFunction()" id="upButton" title="Go to top"><img class="arrow-up" src="img/arrow-up.png"></button>
 
+</main>
+<script src="js/main.js"></script>
 
 
 </html>
