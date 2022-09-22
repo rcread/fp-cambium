@@ -30,3 +30,13 @@ document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click",
   navMenu.classList.remove("active");
 }))
 
+
+// scrolls page on index.html down to each element when clicked
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behaviour: "smooth"
+    });
+  });
+});

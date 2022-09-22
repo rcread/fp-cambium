@@ -119,6 +119,23 @@ header{
     .nav-menu.active{
         right:0;
     }
+
+    .row{
+        display: block;
+        text-align: center;
+        height: 300px;
+        flex: 100%;
+        max-width: 100%
+    }
+
+    .container p{
+        width:100%;
+    }
+
+    .info-image{
+        width:100%;
+        height:100%;
+    }
 }
 
 .cambium-logo{
@@ -143,15 +160,9 @@ header{
     padding: 10px;
 }
 
-@media(max-width:935px){
+@media(max-width:992px){
 .menu-bar{
     display:none;
-}
-}
-
-@media (max-width:600px){
-.menu-bar{
-    display: none;
 }
 }
 
@@ -162,9 +173,13 @@ header{
     position: relative;
 }
 
-@media(min-width:600px){
+@media(min-width:768px){
 .carousel-item{
     height:40rem;
+}
+.info-section{
+    flex-direction:row;
+    grid-template-columns: 1fr 1fr;
 }
 }
 
@@ -174,12 +189,6 @@ header{
     left:0;
     right:0;
     padding-bottom: 50px;
-}
-
-@media(max-width:600px){
-.container p{
-    width:100%;
-}
 }
 
 .overlay-image{
@@ -215,14 +224,6 @@ h2{
     margin-left: auto;
     margin-right: auto;
     font-style: italic;
-    
-}
-
-@media(min-width:800px){
-.info-section{
-    flex-direction:row;
-    grid-template-columns: 1fr 1fr;
-}
 }
 
 .title-container{
@@ -280,26 +281,34 @@ h2{
     padding: 20px;
 }
 
-@media(max-width:600px){
-.info-image{
-    width:100%;
-    height:100%;
-    
-}
-}
-
 .brand-images{
     max-width:1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .brand-bootstrap{
     max-height:150px;
     background-position: center;
     background-size: cover;
+    padding: 10px;
 }
 
-.row div{
-    border: 2px white solid;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.row img{
+    background-position: center;
+    background-size: cover;
 }
 
 /* Button to scroll to the top of the page */
@@ -352,7 +361,7 @@ optgroup{
 
 footer{
     background-color: rgb(168,187,187);
-    height:100%;
+    height:2.5rem;
     color: white;
     padding: 20px;
     display: flex;
@@ -360,8 +369,6 @@ footer{
     font-size:10px;
 }
 
-@media(max-width:400px){
-footer{
-    flex-direction: column;
-}
+.spacing{
+    height:270px;
 }
