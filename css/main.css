@@ -155,6 +155,11 @@ header{
     .our-brands-section, .contact-section{
         padding-top:100px;
     }
+
+    .info-section img{
+        padding:20px;
+        height: 300px;
+    }
 }
 
 .cambium-logo{
