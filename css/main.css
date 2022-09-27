@@ -82,6 +82,14 @@ header{
 }
 
 @media(max-width:768px){
+    .cambium-header{
+        position:fixed;
+        width:100%;
+        gap:0;
+        height:100px;
+        z-index:101;
+    }
+    
     .hamburger{
         display: block;
     }
