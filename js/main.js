@@ -1,18 +1,18 @@
 // button to scoll to the top of the page
 let mybutton = document.getElementById("upButton");
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
 
 function topFunction() {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 
@@ -25,7 +25,7 @@ hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 })
 
-document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click", () => {
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
 }))
@@ -33,7 +33,7 @@ document.querySelectorAll(".nav-link").forEach(n => n. addEventListener("click",
 
 // scrolls page on index.html down to each element when clicked
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e){
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behaviour: "smooth"
