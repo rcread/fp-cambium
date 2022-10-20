@@ -255,7 +255,7 @@ h2 {
 .info-section-contact {
     display: flex;
     align-items: center;
-    background-color: rgb(240, 245, 242);
+    background-color: rgb(168,187,187, 0.4);
     border-radius: 6px;
     padding: 20px;
     color: rgb(64, 101, 101);
