@@ -395,6 +395,17 @@ h2 {
     background-size: cover;
 }
 
+.highlight{
+    border: 3px;
+    padding: 10px 5px;
+}
+
+.highlight:hover{
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+}
+
 /* Button to scroll to the top of the page */
 #upButton {
     position: fixed;
