@@ -259,7 +259,7 @@ h2 {
     border-radius: 6px;
     padding: 20px;
     color: rgb(64, 101, 101);
-    max-width: 1100px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     font-style: italic;
@@ -442,12 +442,13 @@ textarea {
 }
 
 button {
-    border: 0px;
-    color: rgb(64, 101, 101);
+    border: 2px solid rgb(168, 187, 187);
+    background-color: rgb(168, 187, 187);
+    color: white;
 }
 
-button:hover {
-    border: 2px solid rgb(168, 187, 187);
+.submit-btn:hover {
+    opacity: 0.7;
 }
 
 optgroup {
@@ -488,5 +489,22 @@ footer {
 @media(min-width:1024px){
     .three-pic-tile img{
     height: 400px;
+    }
+}
+
+#email:focus, #questions:focus{
+    background-color:rgba(168, 187, 187, 0.637);
+    color: white;
+}
+
+.form-response{
+    border: none;
+    outline: none;
+    color: rgb(64, 101, 101);
+}
+
+@media (max-width:768px){
+    .contact-q{
+        display: none;
     }
 }

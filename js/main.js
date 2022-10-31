@@ -19,7 +19,7 @@ function topFunction() {
 // hamburger menu functionality
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
+qq
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
@@ -93,3 +93,19 @@ function countdown(){
 
 let i = setInterval(countdown, 1000);
 countdown();
+
+//Contact form validation
+
+// window.addEventListener('load', () =>{
+//   const contactForm = document.querySelector('contact-form');
+//   const emailAdd = document.querySelector('email');
+//   const taskList = document.querySelector('lists');
+  
+//   contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+
+
+//   })
+// })
+
