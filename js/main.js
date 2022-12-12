@@ -19,7 +19,7 @@ function topFunction() {
 // hamburger menu functionality
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-qq
+
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
@@ -64,13 +64,13 @@ function countdown(){
     let todayTime = today.getTime();
     // console.log(todayTime);
 
-    let christmasDay = new Date(2023, 0, 11, 8, 0);
-    // console.log(christmasDay);
-    let christmasTime = christmasDay.getTime();
-    let timeUntil = christmasTime - todayTime;
+    let launchDay = new Date(2023, 1, 22, 8, 0);
+    // console.log(launchDay);
+    let launchTime = launchDay.getTime();
+    let timeUntil = launchTime - todayTime;
     // console.log(timeUntil);
 
-    if(christmasTime < todayTime){
+    if(launchTime < todayTime){
         clearInterval(i);
         document.querySelector('.h3').innerHTML = "Countdown has expired";
     } else {
