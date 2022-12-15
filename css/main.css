@@ -55,6 +55,7 @@ header a {
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
+    width: 100%;
 }
 
 @media(max-width:768px) {
@@ -66,10 +67,10 @@ header a {
 .nav-menu {
     font-family: Raleway;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: end;
+    width: 100%;
     gap: 40px;
-    position: fixed;
+    position: absolute;
     right: 40px;
 }
 
