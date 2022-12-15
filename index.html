@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Cambium.com: The Cambium Group</title>
+    <title>The Cambium Group</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,7 +15,7 @@
 </head>
 
     <body>
-        <main class="cambium-main-container">
+        <main class="main-container">
 
             <header class="cambium-header">
                 <nav class="navbar">
@@ -27,26 +29,29 @@
                             <a href="brands.html" class="nav-link">Our Brands</a>
                         </li>
                         <li class="nav-item">
+                            <a href="careers.html" class="nav-link">Careers</a>
+                        </li>
+                        <li class="nav-item">
                             <a href="contact.html" class="nav-link">Contact Us</a>
                         </li>
                     </ul>
+
                     <div class="hamburger">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </div>
-
                 </nav>
             </header> 
             
             <!-- anchored the brand names to their sections below -->
             <section class="menu-bar">
-                <a class="menu-link-ll" href="#ll">Little List</a>
+                <a class="menu-link-tws" href="#tws">The Wedding Shop</a>
                 <a class="menu-link-pza" href="#pza">Prezola</a>
+                <a class="menu-link-wpc" href="#wpc">The Wedding Present Company</a>
                 <a class="menu-link-rmw" href="#rmw">Rock My Wedding</a>
                 <a class="menu-link-tho" href="#tho">The Homeware Outlet</a>
-                <a class="menu-link-wpc" href="#wpc">The Wedding Present Company</a>
-                <a class="menu-link-tws" href="#tws">The Wedding Shop</a>
+                <a class="menu-link-ll" href="#ll">Little List</a>
             </section>
             
             <section class="cambium-carousel">
@@ -62,29 +67,44 @@
                     </ol>
 
                     <div class="carousel-inner">
+
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <div class="overlay-image" style="background-image:url(img/ll.jpg);"></div>
+                            <div class="overlay-image" style="background-image:url(img/tws-del.jpg);"></div>
                             <div class="container">
-                                <h1>Little List</h1>
-                                <p>The UK's first dedicated shopping service and newborn baby registry for expectant parents.</p>
-                                <p>Due Date 22nd February 2023</p>
+                                <h2 class="carousel-header">The Wedding Shop</h2>
+                                <p>The UK's longest established independent wedding list provider.</p>
+                                <a href="https://www.weddingshop.com/" class="btn btn-lg btn-primary" style="background-color:rgb(64,101,101); border-color: rgb(64,101,101);">
+                                    Create a list
+                                </a>
                             </div>
                         </div>
 
                         <div class="carousel-item" data-bs-interval="2000">
                             <div class="overlay-image" style="background-image:url(img/list.jpg);"></div>
                             <div class="container">
-                                <h1>Prezola</h1>
+                                <h2 class="carousel-header">Prezola</h2>
                                 <p>A wedding gift list without compromises.</p>
                                 <a href="https://prezola.com/" class="btn btn-lg btn-primary" style="background-color:rgb(64,101,101); border-color: rgb(64,101,101);">
                                     Set up your list
                                 </a>
                             </div>
                         </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="overlay-image" style="background-image:url(img/wpc-3.jpg);"></div>
+                            <div class="container">
+                                <h2 class="carousel-header">The Wedding Present Company</h2>
+                                <p>A bespoke gift list experience.</p>
+                                <a href="https://www.weddingpresentco.com/" class="btn btn-lg btn-primary" style="background-color:rgb(64,101,101); border-color: rgb(64,101,101);">
+                                    Sign up today
+                                </a>
+                            </div>
+                        </div>
+                        
                         <div class="carousel-item" data-bs-interval="2000">
                             <div class="overlay-image" style="background-image:url(img/rmw-3.jpg);"></div>
                             <div class="container">
-                                <h1>Rock My Wedding</h1>
+                                <h2 class="carousel-header">Rock My Wedding</h2>
                                 <p>The best UK wedding planning resource for brides and grooms featuring real weddings, inspiration, ideas and useful planning advice to create your perfect day.</p>
                                 <a href="https://www.rockmywedding.co.uk/" class="btn btn-lg btn-primary" style="background-color:rgb(64,101,101); border-color: rgb(64,101,101);">
                                     Start wedding plannning
@@ -95,7 +115,7 @@
                         <div class="carousel-item" data-bs-interval="2000">
                             <div class="overlay-image" style="background-image:url(img/tho-4.jpg);"></div>
                             <div class="container">
-                                <h1>The Homeware Outlet</h1>
+                                <h2 class="carousel-header">The Homeware Outlet</h2>
                                 <p>Shop from 500+ designer brands at exceptional prices of up to 60% off.</p>
                                 <a href="https://www.thehomewareoutlet.com/" class="btn btn-lg btn-primary" style="background-color:rgb(64,101,101); border-color: rgb(64,101,101);">
                                     Shop here
@@ -104,24 +124,11 @@
                         </div>
 
                         <div class="carousel-item" data-bs-interval="2000">
-                            <div class="overlay-image" style="background-image:url(img/wpc-3.jpg);"></div>
+                            <div class="overlay-image" style="background-image:url(img/ll.jpg);"></div>
                             <div class="container">
-                                <h1>The Wedding Present Company</h1>
-                                <p>A bespoke gift list experience.</p>
-                                <a href="https://www.weddingpresentco.com/" class="btn btn-lg btn-primary" style="background-color:rgb(64,101,101); border-color: rgb(64,101,101);">
-                                    Sign up today
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <div class="overlay-image" style="background-image:url(img/tws-del.jpg);"></div>
-                            <div class="container">
-                                <h1>The Wedding Shop</h1>
-                                <p>The UK's longest established independent wedding list provider.</p>
-                                <a href="https://www.weddingshop.com/" class="btn btn-lg btn-primary" style="background-color:rgb(64,101,101); border-color: rgb(64,101,101);">
-                                    Create a list
-                                </a>
+                                <h2 class="carousel-header">Little List</h2>
+                                <p>The UK's first dedicated shopping service and newborn baby registry for expectant parents.</p>
+                                <p>Due date 22nd February 2023</p>
                             </div>
                         </div>
                     </div>  
@@ -143,47 +150,34 @@
                     <div class="title-container" >
                         <div class="decorative-box1"></div>
                         <div class="decorative-box2"></div>
-                        <h2>About Us</h2>
+                        <h2 class="title-header">About Us</h2>
                     </div>
                     <div class="info-section">
                         <img class="info-image" src="img/OurTeam.jpg" alt="Meet The Team"/>
-                        <p class="page-info">The Wedding Shop launched in 1990, the UK's longest established independent gift list. Fast forward a few years, The Wedding Present Company (formerly Wedding Presents Direct) was acquired to create Wedding List Solutions. The Cambium Group was formed in 2019 when Wedding List Solutions acquired Prezola and Rock My Wedding. Since then The Homeware Outlet has been launched, 25% of Hostology was acquired and we are expecting the arrival of our baby list company, Little List to launch in early 2023.</p>
+                        <div class="info-about">
+                            <p class="page-info">We are a proud family of award-winning and market-leading B2C brands and we’re growing substantially. Our wedding gifting services help engaged couples build their dream gift lists with an obsessive focus on gold star customer service from our luxury showrooms to our cutting edge tech platforms. Our flagship brands, The Wedding Shop, The Wedding Present Company and Prezola, are the biggest independent wedding gifting brands in the UK, rivaling the likes of John Lewis.</p>
+                            <p class="page-info">Powered by our long-term investors, Phoenix Asset Management Partners, and with a focus on innovation and digital marketing, we’ve now applied these values to new markets too, bringing one of the UK’s leading wedding planning platforms, Rock My Wedding, to the group, along with lifestyle shopping destination The Homeware Outlet. Our newest venture, LittleList, is set to revolutionise the baby gifting market in 2023.</p>
+                        </div>
+                        
                     </div>
                 </section>
 
-                <section class="ll-section" id="ll">
+                <section class="tws-section" id="tws">
                     <div class="title-container">
                         <div class="decorative-box1"></div>
                         <div class="decorative-box2"></div>
-                        <h2>Little List</h2>
+                        <h2 class="title-header">The Wedding Shop</h2>
                     </div>
                     <div class="info-section">
                         <div>
-                            <p>Little List will offer a unique proposition that captures the growing trend for baby showers and
-                            baby gifting, as well as giving new parents a one-stop shop to find products themselves.
-                            LittleList uses fun and clever online tools so expecting parents know what
-                            they will actually need for their baby (since this can be so different
-                            according to lifestyle). Then it allows friends to offer up their own used items
-                            against what they will need.</p>
-                            <p>Little List arriving in...</p>
-                            <div class="today" id="todayDate"></div>
-                            <div class="countdown">
-                                <div class="time-tile">Days
-                                    <p id="days">00</p>
-                                </div>
-                                <div class="time-tile">Hours
-                                    <p id="hours">00</p>
-                                </div>
-                                <div class="time-tile">Minutes
-                                    <p id="mins">00</p>
-                                </div>
-                                <div class="time-tile">Seconds
-                                    <p id="secs">00</p>
-                                </div>
-                            </div>
-
+                            <p class="page-info">The Wedding Shop is a multi-award-winning gift list service that has been supporting couples for
+                            three decades. It’s often a whirlwind of wedmin and emotions, but we’re here to help, and
+                            thrilled to be a part of your exciting journey. Visit our flagship showroom in Fulham to see
+                            thousands of gifts and meet your dedicated Gift Guru. You can also book to visit us at our
+                            Selfridges showroom on Oxford Street.</p>
+                            Go to... <a href="https://www.weddingshop.com">The Wedding Shop</a>
                         </div>
-                        <img class="info-image" src="img/ll-bundle.jpg" alt="Little List Bundle"/>
+                        <img class="info-image" src="img/twsbbq.jpg" alt="A Wedding Shop Couple"/>
                     </div>
                 </section>
 
@@ -191,17 +185,36 @@
                     <div class="title-container">
                         <div class="decorative-box1"></div>
                         <div class="decorative-box2"></div>
-                        <h2>Prezola</h2>
+                        <h2 class="title-header">Prezola</h2>
                     </div>
                     <div class="info-section">
                         <div>
-                            <p>Prezola is the UK’s favourite wedding gift list. Create your online gift list and join thousands
+                            <p class="page-info">Prezola is the UK’s favourite wedding gift list. Create your online gift list and join thousands
                             of happy couples. A Prezola gift list is the easy way for guests to buy you a wedding gift. You
                             create a list of things you love and share it with your guests. We'll keep track of what
                             everyone's bought and deliver the gifts to you after your wedding.</p>
-                            Go to... <a href="https://www.prezola.com">prezola.com</a>
+                            Go to... <a href="https://www.prezola.com">Prezola</a>
                         </div>
                         <img class="info-image" src="img/prezola-delivery.jpg" alt="Prezola Couple Receiving A Delivery"/>
+                    </div>
+                </section>
+
+                <section class="wpc-section" id="wpc">
+                    <div class="title-container">
+                        <div class="decorative-box1"></div>
+                        <div class="decorative-box2"></div>
+                        <h2 class="title-header">The Wedding Present Company</h2>
+                    </div>
+                    <div class="info-section">
+                        <div>
+                            <p class="page-info">At The Wedding Present Company, we’ve been helping couples create their perfect wedding lists for
+                            over 25 years. In the midst of planning your wedding, you can trust in our expertise to help you
+                            find presents you’ll love forever. As experts in our field drawing on over 25 years’ experience
+                            in wedding lists, we can inspire you with a curated portfolio of your favourite brands and
+                            exclusive presents you won’t find anywhere else. </p>
+                            Go to... <a href="https://www.weddingpresentco.com">The Wedding Present Company</a>
+                        </div>
+                        <img class="info-image" src="img/wpc0.jpg" alt="Wedding Present Company Wedding"/>
                     </div>
                 </section>
 
@@ -209,16 +222,16 @@
                     <div class="title-container">
                         <div class="decorative-box1"></div>
                         <div class="decorative-box2"></div>
-                        <h2>Rock My Wedding</h2>
+                        <h2 class="title-header">Rock My Wedding</h2>
                     </div>
                     <div class="info-section">
                         <div>
-                            <p>The best UK wedding planning resource. Wedding planning is really exciting but can be a little
+                            <p class="page-info">The best UK wedding planning resource. Wedding planning is really exciting but can be a little
                             challenging. On Rock My Wedding, you’ll find stylish, unique, inspirational weddings and words
                             of wisdom from real planning couples. Plus, you can use our curated list of Recommended
                             Suppliers. From talented florists and beautiful venues to innovative catering and engaging
                             entertainers, theres a supplier for everyone on our recommended list.</p>
-                            Go to... <a href="https://www.rockmywedding.co.uk">rockmywedding.co.uk</a>
+                            Go to... <a href="https://www.rockmywedding.co.uk">Rock My Wedding</a>
                         </div>
                         <img class="info-image" src="img/rmwcouple.png" alt="Rock My Wedding Couple"/>
                     </div>
@@ -228,57 +241,59 @@
                     <div class="title-container">
                         <div class="decorative-box1"></div>
                         <div class="decorative-box2"></div>
-                        <h2>The Homeware Outlet</h2>
+                        <h2 class="title-header">The Homeware Outlet</h2>
                     </div>
                     <div class="info-section">
                         <div>
-                            <p>Upgrade your interior aesthetics with The Homeware Outlet’s exclusive offers of up to 60% off
+                            <p class="page-info">Upgrade your interior aesthetics with The Homeware Outlet’s exclusive offers of up to 60% off
                             from your favourite brands. Our seasonal edits keep you up to date on stylish décor trends or
                             you can shop our range of covetable classics. With everything from designer soft furnishings to
                             sumptuous bedding and unique kitchenware, The Homeware Outlet makes it possible to truly elevate
                             your space.</p>
-                            Go to... <a href="https://www.thehomewareoutlet.com">thehomewareoutlet.com</a>
+                            Go to... <a href="https://www.thehomewareoutlet.com">The Homeware Outlet</a>
                         </div>
                         <img class="info-image" src="img/kitchen.jpg" alt="The Homeware Outlet Pots and Pans"/>
                     </div>
                 </section>
 
-                <section class="wpc-section" id="wpc">
+                <section class="ll-section" id="ll">
                     <div class="title-container">
                         <div class="decorative-box1"></div>
                         <div class="decorative-box2"></div>
-                        <h2>The Wedding Present Company</h2>
+                        <h2 class="title-header">Little List</h2>
                     </div>
                     <div class="info-section">
                         <div>
-                            <p>At The Wedding Present Company, we’ve been helping couples create their perfect wedding lists for
-                            over 25 years. In the midst of planning your wedding, you can trust in our expertise to help you
-                            find presents you’ll love forever. As experts in our field drawing on over 25 years’ experience
-                            in wedding lists, we can inspire you with a curated portfolio of your favourite brands and
-                            exclusive presents you won’t find anywhere else. </p>
-                            Go to... <a href="https://www.weddingpresentco.com">weddingpresentco.com</a>
-                        </div>
-                        <img class="info-image" src="img/wpc0.jpg" alt="Wedding Present Company Wedding"/>
-                    </div>
-                </section>
+                            <p class="page-info">Little List will offer a unique proposition that captures the growing trend for baby showers and
+                            baby gifting, as well as giving new parents a one-stop shop to find products themselves.
+                            LittleList uses fun and clever online tools so expecting parents know what
+                            they will actually need for their baby (since this can be so different
+                            according to lifestyle). Then it allows friends to offer up their own used items
+                            against what they will need.</p>
 
-                <section class="tws-section" id="tws">
-                    <div class="title-container">
-                        <div class="decorative-box1"></div>
-                        <div class="decorative-box2"></div>
-                        <h2>The Wedding Shop</h2>
-                    </div>
-                    <div class="info-section">
-                        <div>
-                            <p>The Wedding Shop is a multi-award-winning gift list service that has been supporting couples for
-                            three decades. It’s often a whirlwind of wedmin and emotions, but we’re here to help, and
-                            thrilled to be a part of your exciting journey. Visit our flagship showroom in Fulham to see
-                            thousands of gifts and meet your dedicated Gift Guru. You can also book to visit us at our
-                            Selfridges showroom on Oxford Street.</p>
-                            Go to... <a href="https://www.weddingshop.com">weddingshop.com</a>
                         </div>
-                        <img class="info-image" src="img/twsbbq.jpg" alt="A Wedding Shop Couple"/>
+                        <img class="info-image" src="img/ll-bundle.jpg" alt="Little List Bundle"/>
                     </div>
+
+                    <div class="countdown">
+                        <p>Little List arriving in...</p>
+                        <div class="today" id="todayDate"></div>
+                        <div class="countdown-timer">
+                            <div class="time-tile">
+                                <p class="time-tile-count"id="days">00</p>Days
+                            </div>
+                            <div class="time-tile">
+                                <p class="time-tile-count"id="hours">00</p>Hours
+                            </div>
+                            <div class="time-tile">
+                                <p class="time-tile-count"id="mins">00</p>Minutes
+                            </div>
+                            <div class="time-tile">
+                                <p class="time-tile-count"id="secs">00</p>Seconds
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
 
                 <button onclick="topFunction()" id="upButton" title="Go to top"><img class="arrow-up" src="img/arrow-up.png"></button>
@@ -286,7 +301,7 @@
             </section>
 
             
-            <footer>
+            <footer class="footer">
                 <div>© 2022 The Cambium Group </div>
                 <div>Design by Rachel Read</div>
             </footer>
