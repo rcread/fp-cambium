@@ -2,7 +2,7 @@
     font-family: Playfair Display, Arial, sans-serif;
 }
 
-* {
+*, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -69,9 +69,10 @@ header a {
     display: flex;
     justify-content: end;
     width: 100%;
-    gap: 40px;
+    gap: 10px;
     position: absolute;
-    right: 40px;
+    right: 10px;
+    font-size: 14px;
 }
 
 @media(max-width:768px) {
@@ -89,6 +90,14 @@ header a {
     }
 }
 
+@media ( min-width:992px ) {
+    .nav-menu {
+        gap: 25px;
+        font-size: 16px;
+        right: 40px;
+    }
+}
+
 .nav-branding {
     font-size: 2rem;
 }
@@ -96,6 +105,8 @@ header a {
 .nav-link {
     transition: 0.7s ease;
     color: rgb(64, 101, 101);
+    margin: 0 auto;
+    padding: 0px !important;
 }
 
 .nav-item a {
@@ -169,8 +180,9 @@ header a {
 
 .contact-heading {
     color:rgb(64, 101, 101);
-    padding: 20px;
+    margin-top: 40px;
     font-family: Playfair Display;
+    text-align: center;
 }
 
 .cambium-logo {
@@ -471,6 +483,7 @@ h2 {
     display: flex;
     flex-direction: column;
     color: rgb(64, 101, 101);
+    width: 90%;
     max-width: 700px;
     font-family: Playfair Display;
 }
@@ -633,6 +646,7 @@ optgroup {
         align-items: center;
         margin: 0 auto;
         justify-content: space-evenly;
+        max-width: 992px; 
     }
 }
 
@@ -641,6 +655,10 @@ optgroup {
     font-weight: bold;
     padding-top: 30px;
 }
+
+/* .showroom-container {
+          
+} */
 
 .showroom-title {
     font-size: 18px;
@@ -652,8 +670,13 @@ optgroup {
 }
 
 .showroom-address {
-    padding: 0;
+    padding: 0px;
     margin: 0;
+}
+
+.showroom-tel {
+    padding: 0px;
+    margin: 0px 0px 20px;
 }
 
 #email:focus, #questions:focus {
@@ -672,6 +695,27 @@ optgroup {
         display: none;
     }
 }
+
+.contact-info {
+    font-family: Playfair Display;
+    color:rgb(64, 101, 101);
+    text-align: center;
+}
+
+.contact-details {
+    margin: 0 auto;
+    max-width: 588px;
+}
+
+.contact-teams {
+    padding: 10px 0px;
+}
+
+.team-name {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
 
 .footer {
     height: 2.5rem;
